@@ -1,0 +1,68 @@
+body {
+  margin-top: 300px;
+}
+
+.map-section {
+  max-width: 1200px;
+  border-radius: 100px;
+  width: 95%;
+
+  margin: 0 auto;
+  margin-top: 20px;
+}
+/* Detail paragraphs styling */
+.DETAIL1,
+.DETAIL2,
+.DETAIL3,
+.DETAIL4,
+.DETAIL5,
+.DETAIL6,
+.DETAIL7,
+.DETAIL8,
+.DETAIL9 {
+  font-family: "Sunflower", sans-serif;
+  font-weight: normal; /* Assuming '50px' was intended to be font-size, not weight */
+  font-style: normal;
+  font-size: 18px; /* Adjusted for readability, change as needed */
+  margin-top: 40px;
+  margin-bottom: 40px;
+  line-height: 2;
+}
+.color {
+  font-family: "Sunflower", sans-serif;
+  font-size: 21px; /* Adjusted for readability, change as needed */
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #fd896d; /* Specific color for the title */
+  line-height: 2;
+}
+
+/* Specific styles for DETAIL1 */
+.DETAIL1 {
+  font-size: 40px; /* Larger font size for the title */
+  color: #fd896d; /* Specific color for the title */
+  margin-bottom: 30px; /* Smaller bottom margin for title */
+}
+
+/* Image styling for responsiveness */
+.blogpost1 {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply to body and html to ensure full coverage */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  flex-wrap: nowrap; /* Prevents wrapping to a new line */
+}
+
+.item {
+  width: 15%; /* Adjust the percentage as needed */
+  height: auto; /* This ensures the aspect ratio is maintained */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-top: 20px;
+  margin-left: 30px; /* No margin on the left */
+  margin-right: 0; /* No margin on the right */
+  border: 1px solid #ddd; /* Optional: adds a subtle border around the images */
+  border-radius: 4px; /* Optional: rounds the corners of the images */
+}
+.option {
+  margin-left: 145px;
+}
+/* ... media queries and other styles ... */
+
+@media (max-width: 768px) {
+  .item {
+    margin-left: 3px;
+    width: 28%; /* You might want larger thumbnails on smaller screens */
+  }
+}
+.item {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: scale(1.1);
+}
+
+.left-column,
+.right-column {
+  flex: 1 1 40%;
+}
+
+.product-image {
+  width: 80%; /* Adjust width as needed */
+  max-width: 600px; /* Set a max-width to constrain the image size */
+  height: auto; /* This will maintain the aspect ratio */
+  display: block; /* Ensures that the image is block-level to respect width/height */
+
+  margin: auto; /* This centers the image in the container if it's smaller than the container's width */
+}
+.product-details,
+.product-options,
+.purchase-info {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #f09c9c;
+  line-height: 3;
+}
+.h1 {
+  color: #f09c9c;
+  font-size: 50px;
+}
+.h2 {
+  color: #f09c9c;
+  margin-left: 10px;
+}
+.quote {
+  color: black;
+  margin-left: 5px;
+}
+.rating {
+  color: rgb(238, 214, 0);
+  margin-left: 10px;
+}
+.hr {
+  width: 80%; /* Adjust this value to change the length of the <hr> */
+  height: 2px; /* Sets the thickness of the <hr>, needed to show the background color */
+  background-color: #f09c9c; /* This sets the color of the <hr> */
+  margin-right: auto; /* Centers the <hr> */
+  border: none; /* Removes the default border to rely on background color */
+}
+.quanti {
+  display: none;
+}
+.quanti label,
+.quanti span {
+  padding: 0 10px 0 10px;
+  background: none;
+  border: 1px solid #ffffff;
+  color: #f09c9c;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.quanti label {
+  padding: 0 20px 0 20px;
+}
+.cart-btn,
+.buy-btn {
+  display: none;
+  width: 170px;
+  height: 60px;
+  margin-left: 13px;
+  padding: 10px 20px;
+  margin-top: 50px;
+  color: white;
+  background-color: #f09c9c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition for multiple properties */
+}
+
+.cart-btn:hover,
+.buy-btn:hover {
+  background-color: #f09c9c; /* Slightly darker shade on hover */
+  transform: translateY(-10px); /* Slightly raise the button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .option {
+    padding-right: 20px;
+  }
+  .left-column,
+  .right-column {
+    flex: 1 1 100%;
+  }
+}
+/* Social Links Colors */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply to body and html to ensure full coverage */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-container {
+  max-width: 1700px;
+
+  margin: auto; /* Center the container */
+  padding: 0 15px; /* Add padding */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Wrap elements for responsiveness */
+  justify-content: center; /* Center items horizontally */
+}
+
+.footer {
+  background-color: #ffc9c9;
+  padding: 0px 0px; /* increase padding for more space */
+  text-align: center; /* center the content */
+  margin-top: 200px; /* ensure there's space between the main content and the footer */
+
+  font-family: "Sunflower", sans-serif;
+}
+.logo img {
+  display: block; /* Make sure the image is a block element to allow margin auto to work */
+  height: 400px; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure image is responsive and doesn't exceed its container */
+  mix-blend-mode: multiply;
+}
+
+.footer-col {
+  flex: 1; /* Give columns the ability to grow */
+  min-width: 250px; /* Minimum width before wrapping */
+  margin: 25px; /* Add some margin between columns */
+  margin-top: 100px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #000;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+.social-links {
+  display: flex; /* Establishes a flex container */
+  align-items: center; /* Centers items vertically */
+  justify-content: start; /* Aligns items to the start of the container */
+  flex-wrap: nowrap; /* Prevents wrapping to ensure items stay in one line */
+}
+
+.social-links a {
+  display: inline-flex; /* Makes each link a flex container too */
+  align-items: center; /* Centers the icon and text vertically inside the link */
+  justify-content: center; /* Centers content horizontally inside the link */
+  text-decoration: none; /* Removes underline from links */
+  width: 80px;
+  height: 60px;
+  padding: 10px 20px;
+
+  margin: 10px 2px 30px; /* Top, right/left, bottom margins */
+  color: white;
+  background-color: #f09c9c; /* Base color, overridden for specific links */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px; /* Consistent font size */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition for multiple properties */
+}
+
+/* Specific Social Colors and overrides */
+.social-links a.facebook {
+  background-color: #3b5998;
+}
+.social-links a.instagram {
+  background-color: #e1306c;
+}
+.social-links a.tiktok {
+  background-color: #000000;
+}
+.social-links a.youtube {
+  background-color: #ff0000;
+}
+.social-links a.shopee {
+  background-color: #f57224;
+}
+.social-links a.lazada {
+  background-color: #ff5722;
+}
+/* Hover effects */
+.social-links a:hover {
+  background-color: #fff; /* Changes the background to white on hover */
+  color: #333; /* Changes text/icon color to dark grey for visibility */
+  transform: scale(1.1); /* Slightly enlarges the link */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for depth */
+}
+
+.footer-col ul li {
+  list-style-type: none; /* Removes bullet points */
+  line-height: 1.5; /* Adds more spacing between lines */
+  margin-bottom: 10px; /* Adds space between list items */
+}

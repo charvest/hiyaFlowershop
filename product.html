@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product</title>
+    <link rel="stylesheet" href="FOOTER/footer.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="product.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <script src="product.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="pink-line">
+      <marquee behavior=" slide " direction="right">
+        ANONG GENTLE GENTLE</marquee
+      >
+    </div>
+    <nav class="navbar"></nav>
+
+    <section class="product-details">
+      <div class="image-slider">
+        <img
+          id="main-image"
+          src="images/1.png"
+          alt="Violet Vault Bouquet"
+          class="cover-image"
+        />
+        <div class="product-images">
+          <img
+            src="images/2.png"
+            class="item"
+            onclick="changeImage('2.png')"
+            alt="Image 1"
+          />
+          <img
+            src="images/3.png"
+            class="item"
+            onclick="changeImage('3.png')"
+            alt="Image 2"
+          />
+
+          <img
+            src="images/1.png"
+            class="item"
+            onclick="changeImage('1.png')"
+            alt="Image 3"
+          />
+        </div>
+      </div>
+
+      <div class="product-details">
+        <div class="product-description">
+          <h2 class="product-name">
+            Purple Daisy Rose
+            <hr class="underline" />
+          </h2>
+
+          <p class="quote">
+            In the garden of love, flowers bloom in the heart's secret
+            corners,each petal a testament to moments cherished and memories
+            shared.
+          </p>
+        </div>
+
+        <div class="rating-container">
+          <div class="price-rating">
+            <h2 class="product-price">₱1,399</h2>
+            <span class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-alt"></i>
+              <span>4.9</span></span
+            >
+          </div>
+
+          <div class="quanti">
+            <div class="Quantity">
+              <h5><small>Quantity:</small></h5>
+              <span class="decrement">-</span>
+              <label id="quantity">1</label>
+              <span class="increment">+</span>
+            </div>
+          </div>
+
+          <button class="btn cart-btn">ADD TO CART</button>
+          <button class="btn buy-btn">BUY NOW</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="product">
+      <div class="bestsellers">
+        <h1>Best Sellers</h1>
+        <hr />
+      </div>
+      <div class="product-container">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/daisyrose.png" alt="product-thumb" />
+            <button class="card-btn">add to whishlist</button>
+          </div>
+          <div class="product-info">
+            <h5>Purple Daisyrose</h5>
+            <span class="price" style="color: rgb(240, 151, 151)"
+              >₱1,399&nbsp;&nbsp;
+              <del class="text-xs whitespace-nowrap" style="color: gray"
+                >₱2,399</del
+              ></span
+            >
+            <i class="fa fa-star checked"></i>
+            <span class="mx-2">4.9</span>
+            <span class="mx-1">(18)</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/velvetviolet.png" alt="product-thumb" />
+            <button class="card-btn">add to whishlist</button>
+          </div>
+          <div class="product-info">
+            <h5>Velvet Violet</h5>
+            <span class="price" style="color: rgb(240, 151, 151)"
+              >₱1,399&nbsp;&nbsp;
+              <del class="text-xs whitespace-nowrap" style="color: gray"
+                >₱2,399</del
+              ></span
+            >
+            <i class="fa fa-star checked"></i>
+            <span class="mx-2">4.9</span>
+            <span class="mx-1">(18)</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/Elegant_tulip.png" alt="product-thumb" />
+            <button class="card-btn">add to whishlist</button>
+          </div>
+          <div class="product-info">
+            <h5>Elegant Tulip</h5>
+            <span class="price" style="color: rgb(240, 151, 151)"
+              >₱1,399&nbsp;&nbsp;
+              <del class="text-xs whitespace-nowrap" style="color: gray"
+                >₱2,399</del
+              ></span
+            >
+            <i class="fa fa-star checked"></i>
+            <span class="mx-2">4.9</span>
+            <span class="mx-1">(18)</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/Spray_Roses.png" alt="product-thumb" />
+            <button class="card-btn">add to whishlist</button>
+          </div>
+          <div class="product-info">
+            <h5>Spray Roses</h5>
+            <span class="price" style="color: rgb(240, 151, 151)"
+              >₱1,399&nbsp;&nbsp;
+              <del class="text-xs whitespace-nowrap" style="color: gray"
+                >₱2,399</del
+              ></span
+            >
+            <i class="fa fa-star checked"></i>
+            <span class="mx-2">4.9</span>
+            <span class="mx-1">(18)</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/Pink_Rosie.png" alt="product-thumb" />
+            <button class="card-btn">add to whishlist</button>
+          </div>
+          <div class="product-info">
+            <h5>Pinkie Rosie</h5>
+            <span class="price" style="color: rgb(240, 151, 151)"
+              >₱1,399&nbsp;&nbsp;
+              <del class="text-xs whitespace-nowrap" style="color: gray"
+                >₱2,399</del
+              ></span
+            >
+            <i class="fa fa-star checked"></i>
+            <span class="mx-2">4.9</span>
+            <span class="mx-1">(18)</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/Empress_Love.png" alt="product-thumb" />
+            <button class="card-btn">add to whishlist</button>
+          </div>
+          <div class="product-info">
+            <h5>Empress Love</h5>
+            <span class="price" style="color: rgb(240, 151, 151)"
+              >₱1,399&nbsp;&nbsp;
+              <del class="text-xs whitespace-nowrap" style="color: gray"
+                >₱2,399</del
+              ></span
+            >
+            <i class="fa fa-star checked"></i>
+            <span class="mx-2">4.9</span>
+            <span class="mx-1">(18)</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/Violet Vault.png" alt="product-thumb" />
+            <button class="card-btn">add to whishlist</button>
+          </div>
+          <div class="product-info">
+            <h5>Violet Vault</h5>
+            <span class="price" style="color: rgb(240, 151, 151)"
+              >₱1,399&nbsp;&nbsp;
+              <del class="text-xs whitespace-nowrap" style="color: gray"
+                >₱2,399</del
+              ></span
+            >
+            <i class="fa fa-star checked"></i>
+            <span class="mx-2">4.9</span>
+            <span class="mx-1">(18)</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/Sunny_serenade_bouquet.png" alt="product-thumb" />
+            <button class="card-btn">add to whishlist</button>
+          </div>
+          <div class="product-info">
+            <h5>Sunney Serenade Boquet</h5>
+            <span class="price" style="color: rgb(240, 151, 151)"
+              >₱1,399&nbsp;&nbsp;
+              <del class="text-xs whitespace-nowrap" style="color: gray"
+                >₱2,399</del
+              ></span
+            >
+            <i class="fa fa-star checked"></i>
+            <span class="mx-2">4.9</span>
+            <span class="mx-1">(18)</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/Snow_White.png" alt="product-thumb" />
+            <button class="card-btn">add to whishlist</button>
+          </div>
+          <div class="product-info">
+            <h5>Snow White</h5>
+            <span class="price" style="color: rgb(240, 151, 151)"
+              >₱1,399&nbsp;&nbsp;
+              <del class="text-xs whitespace-nowrap" style="color: gray"
+                >₱2,399</del
+              ></span
+            >
+            <i class="fa fa-star checked"></i>
+            <span class="mx-2">4.9</span>
+            <span class="mx-1">(18)</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/Melody.png" alt="product-thumb" />
+            <button class="card-btn">add to whishlist</button>
+          </div>
+          <div class="product-info">
+            <h5>Melody</h5>
+            <span class="price" style="color: rgb(240, 151, 151)"
+              >₱1,399&nbsp;&nbsp;
+              <del class="text-xs whitespace-nowrap" style="color: gray"
+                >₱2,399</del
+              ></span
+            >
+            <i class="fa fa-star checked"></i>
+            <span class="mx-2">4.9</span>
+            <span class="mx-1">(18)</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/Heart_Pillow.png" alt="product-thumb" />
+            <button class="card-btn">add to whishlist</button>
+          </div>
+          <div class="product-info">
+            <h5>Heart Pillow</h5>
+            <span class="price" style="color: rgb(240, 151, 151)"
+              >₱1,399&nbsp;&nbsp;
+              <del class="text-xs whitespace-nowrap" style="color: gray"
+                >₱2,399</del
+              ></span
+            >
+            <i class="fa fa-star checked"></i>
+            <span class="mx-2">4.9</span>
+            <span class="mx-1">(18)</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/Bears_Plush_Bouquet.png" alt="product-thumb" />
+            <button class="card-btn">add to whishlist</button>
+          </div>
+          <div class="product-info">
+            <h5>Cuddle Bear</h5>
+            <span class="price" style="color: rgb(240, 151, 151)"
+              >₱1,399&nbsp;&nbsp;
+              <del class="text-xs whitespace-nowrap" style="color: gray"
+                >₱2,399</del
+              ></span
+            >
+            <i class="fa fa-star checked"></i>
+            <span class="mx-2">4.9</span>
+            <span class="mx-1">(18)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Items -->
+
+    <footer></footer>
+
+    <script src="nav.js"></script>
+    <script src="footer.js"></script>
+    <script src="script.js"></script>
+    <script src="product.js"></script>
+  </body>
+</html>

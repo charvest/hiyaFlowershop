@@ -1,0 +1,147 @@
+.product-details {
+  width: 100%;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-slider {
+  width: 500px;
+  height: 500px;
+
+  position: relative;
+  background-size: cover;
+}
+.cover-image {
+  width: 500px;
+  height: 500px;
+}
+
+.product-images {
+  position: absolute;
+  bottom: 20px;
+  left: 38%;
+  transform: translate(-36%, 120%);
+  width: 80%;
+
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100px;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.item {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: scale(1.1);
+}
+
+.product-images img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: 80%;
+  height: 80px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.product-details {
+  width: 100%;
+}
+
+.product-details .underline {
+  width: 100%;
+  background-color: #f09c9c;
+  height: 2px;
+  border: none;
+}
+
+.product-name {
+  font-weight: 700;
+  color: #f09c9c;
+  font-size: 50px;
+}
+
+.quote {
+  width: 90%;
+  align-self: center;
+  padding-top: 20px;
+  font-size: 20px;
+}
+.rating-container {
+  transform: translate(-130%, 50%);
+
+  width: 70%;
+  display: flexbox;
+}
+
+.price-rating {
+  width: 50%;
+  height: 10vh;
+}
+
+.product-price {
+  color: #f09c9c;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.rating {
+  top: -70%;
+  color: orange;
+}
+
+.Quantity {
+  width: 50%;
+  height: 50px;
+}
+.quanti {
+  display: flex;
+
+  display: flexbox;
+  width: 300%;
+  height: 80px;
+}
+
+.quanti label,
+.quanti span {
+  padding: 0 10px 0 10px;
+  background: none;
+  border: 1px solid #ffffff;
+  color: #181818;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.quanti label {
+  padding: 0 20px 0 20px;
+}
+
+.btn {
+  width: 48%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f09c9c;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .option {
+    padding-right: 20px;
+  }
+  .left-column,
+  .right-column {
+    flex: 1 1 100%;
+  }
+}

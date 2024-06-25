@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ITEM NO ADD TO CART/Violet-vault/violet-vaults.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+ <link rel="icon" href="/images/logos.png" type="image/x-icon">
+    <title>In Loving Memories</title>
+</head>
+<body>
+  <nav class="navbar">
+
+  </nav>
+  <script src="../nav.js"></script>
+  <script src="../script.js"></script>
+  <link rel="stylesheet" href="../navbar.css">
+<link rel="stylesheet" href="../Violet-vault/violet-vaults.css">
+
+  
+    <div class="container">
+        <div class="left-column">
+    <img id="main-image" src=" In-Loving-Memories.png" alt="Violet Vault Bouquet" class="product-image">
+            <div class="option">
+              <img src=" In-Loving-Memories.png" class="item" onclick="changeImage('In-Loving-Memories.png')" alt="Image 3">
+                <img src=" 116.png" class="item" onclick="changeImage('116.png')" alt="Image 1">
+                <img src=" 117.png" class="item" onclick="changeImage('117.png')" alt="Image 2">
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="product-details">
+                <h1 class="h1">In Loving Memories</h1>
+                <hr class="hr">
+                <h2 class="h2">₱3,000</h2>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                    <span>4.5</span>
+                </div>
+               
+                <p class="quote">Though words can't heal the pain of losing someone dear, my heart is with you,<br> just as it always has been, just as it always will be</p>
+                <div class="quantity">
+                    <div class="quanti flex1">
+                        <h5><small>Quantity:</small></h5>
+                        <span class="decrement">-</span>
+                        <label id="quantity">1</label>
+                        <span class="increment">+</span>
+                    </div>
+                </div>
+             
+                    <button class="buy-btn">BUY NOW</button>
+            
+    </div>
+    </div>
+    </div>
+    </div>
+   <!-- Footer Section -->
+   <footer class="footer">
+   
+  </footer>
+  <script src="../footer.js"></script>
+    <script>
+      
+             //QUANTITY
+             document.addEventListener("DOMContentLoaded", function () {
+    const decrementBtn = document.querySelector('.decrement');
+    const incrementBtn = document.querySelector('.increment');
+    const quantityLabel = document.getElementById('quantity');
+    const maxQuantity = 5; // Set the maximum quantity to 10
+
+    decrementBtn.addEventListener('click', function () {
+        let quantity = parseInt(quantityLabel.textContent);
+        if (quantity > 1) {
+            quantity--;
+            quantityLabel.textContent = quantity;
+        }
+    });
+
+    incrementBtn.addEventListener('click', function () {
+        let quantity = parseInt(quantityLabel.textContent);
+        if (quantity < maxQuantity) { // Check if the quantity is less than the maximum
+            quantity++;
+            quantityLabel.textContent = quantity;
+        }
+    });
+});
+
+            // 3 IMAGE FLOWER//
+        function changeImage(imageFile) {
+            var mainImg = document.getElementById("main-image");
+            mainImg.src = imageFile;
+            mainImg.alt = imageFile;
+
+        }  
+        const imagePaths = ['Violet Vault.png', 'Violet-vault2.png', 'Violet-vault3.png'];
+        const images = imagePaths.map(path => {
+            const img = new Image();
+            img.src = path;
+            return img;
+        });
+
+        function changeImage(imageFile) {
+            document.getElementById("main-image").src = imageFile;
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+    const imagePaths = ['Violet Vault.png', 'Violet-vault2.png', 'Violet-vault3.png'];
+    const images = imagePaths.map(path => {
+        const img = new Image();
+        img.src = path;
+        return img;
+    });
+
+    const mainImage = document.getElementById("main-image");
+    document.querySelectorAll(".item").forEach(item => {
+        item.addEventListener("click", function() {
+            const newSrc = this.getAttribute("src");
+            if (mainImage.src !== newSrc) {
+                mainImage.style.opacity = 0;
+                setTimeout(() => {
+                    mainImage.src = newSrc;
+                    mainImage.alt = newSrc;
+                    mainImage.style.opacity = 1;
+                }, 300);
+            }
+        });
+    });
+});
+function updateProductDetails(variant) {
+    document.querySelector(".h2").textContent = variant.price;
+    document.querySelector(".product-details .quote").textContent = variant.description;
+    // Update other elements as needed
+}  // ADDED TO THE CART
+document.querySelector('.cart-btn').addEventListener('click', function() {
+    const originalText = this.textContent;
+    this.textContent = 'Added to Cart!';
+    this.disabled = true; // Optional: disable button to prevent multiple clicks
+    setTimeout(() => {
+        this.textContent = originalText;
+        this.disabled = false; // Re-enable the button
+    }, 2000); // Change the text back after 2 seconds
+});
+function animateProductToCart(imgElem) {
+    const cartElem = document.querySelector('.cart-icon'); // Assume there's a cart icon with this class
+    const imgClone = imgElem.cloneNode();
+    const rect = imgElem.getBoundingClientRect();
+    const cartRect = cartElem.getBoundingClientRect();
+
+    Object.assign(imgClone.style, {
+        position: 'absolute',
+        top: rect.top + 'px',
+        left: rect.left + 'px',
+        width: rect.width + 'px',
+        transition: 'all 0.7s ease-in-out'
+    });
+            ///CARRRRTTTTT BISNAR//
+    document.body.appendChild(imgClone);
+    setTimeout(() => {
+        Object.assign(imgClone.style, {
+            top: cartRect.top + 'px',
+            left: cartRect.left + 'px',
+            width: '50px', // Smaller as it goes to the cart
+            opacity: 0
+        });
+    }, 100);
+
+    setTimeout(() => {
+        imgClone.remove();
+    }, 600);
+}
+  ///CARTTTTT
+document.querySelector('.cart-btn').addEventListener('click', function() {
+    const mainImage = document.querySelector('.product-image');
+    animateProductToCart(mainImage);
+});
+
+    </script>
+</body>
+</html>

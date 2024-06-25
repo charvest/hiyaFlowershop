@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hiyas Flowershop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="../images/logos.png" />
+  </head>
+
+  <body>
+    <main>
+      <div class="box">
+        <div class="inner-box">
+          <div class="forms-wrap">
+            <form
+              action="user_signin.html"
+              autocomplete="off"
+              class="sign-in-form"
+              id="signInForm"
+            >
+              <div class="logo">
+                <img src="./img/logo.png" alt="easyclass" />
+              </div>
+
+              <div class="heading">
+                <h2>Welcome Back</h2>
+                <h6>Not registered yet?</h6>
+                <a href="#" class="toggle" id="signUpLink">Sign up</a>
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="email"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                    id="signInEmail"
+                    name="signInEmail"
+                  />
+                  <label>Email</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                    id="signInPassword"
+                    name="signInPassword"
+                  />
+                  <label>Password</label>
+                </div>
+
+                <!-- Email Not Found Alert -->
+                <div
+                  id="alert-no-email-found"
+                  class="alert form-alert-no-email-found hidden"
+                >
+                  <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                  <strong>Email is not found.</strong>
+                </div>
+
+                <input type="submit" value="Sign In" class="sign-btn" />
+              </div>
+            </form>
+
+            <!-- Updated Sign-Up Form -->
+            <form
+              action="user_signup.php"
+              method="POST"
+              autocomplete="off"
+              class="sign-up-form"
+              id="signUpForm"
+            >
+              <div class="logo">
+                <img src="./img/logo.png" alt="easyclass" />
+              </div>
+
+              <div class="heading">
+                <h2>Get Started</h2>
+                <h6>Already have an account?</h6>
+                <a href="#" class="toggle" id="signInLink">Sign in</a>
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                    id="signUpName"
+                    name="username"
+                  />
+                  <label>Name</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="email"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                    id="signUpEmail"
+                    name="email"
+                  />
+                  <label>Email</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                    id="signUpPassword"
+                    name="password"
+                  />
+                  <label>Password</label>
+                </div>
+
+                <!-- Email taken alert -->
+                <div
+                  id="alert-email-taken"
+                  class="alert form-alert-email-taken hidden"
+                >
+                  <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                  <strong
+                    >Email is already taken. Please choose another one.</strong
+                  >
+                </div>
+
+                <!-- Username taken alert -->
+                <div
+                  id="alert-username-taken"
+                  class="alert form-alert-username-taken hidden"
+                >
+                  <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                  <strong
+                    >Username is already taken. Please choose another
+                    one.</strong
+                  >
+                </div>
+
+                <!-- Sign up successful alert -->
+                <div
+                  id="alert-signup-successful"
+                  class="alert form-alert-signup-successful hidden"
+                >
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  <strong>Sign up successful</strong>
+                </div>
+
+                <!-- Paassword Weak alert -->
+                <div
+                  id="alert-password-weak"
+                  class="alert form-alert-password-weak hidden"
+                >
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  <strong>Sign up successful</strong>
+                </div>
+
+                <input type="submit" value="Sign Up" class="sign-btn" />
+              </div>
+            </form>
+          </div>
+
+          <div class="carousel">
+            <div class="images-wrapper">
+              <img src="./img/1.png" class="image img-1 show" alt="" />
+              <img src="./img/6.png" class="image img-2" alt="" />
+              <img src="./img/4.png" class="image img-3" alt="" />
+            </div>
+
+            <div class="text-slider">
+              <div class="text-wrap">
+                <div class="text-group">
+                  <h2>Create Your Own Bouquets</h2>
+                  <h2>Customize Your Arrangements</h2>
+                  <h2>Invite Friends to Your Floral Shop</h2>
+                </div>
+              </div>
+
+              <div class="bullets">
+                <span class="active" data-value="1"></span>
+                <span data-value="2"></span>
+                <span data-value="3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- JavaScript file -->
+    <script src="app.js"></script>
+  </body>
+</html>

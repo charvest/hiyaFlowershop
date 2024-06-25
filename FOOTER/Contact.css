@@ -1,0 +1,199 @@
+body {
+  font-family: "Sunflower", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Headings and details styling */
+.DETAIL1,
+.DETAIL2,
+.DETAIL3,
+.DETAIL4,
+.DETAIL5,
+.DETAIL6 {
+  font-family: "Sunflower", sans-serif;
+  font-weight: normal; /* Adjusted from 50px which is incorrect for font-weight */
+  font-style: normal;
+
+  margin-bottom: 20px; /* Adjusted margin for better spacing */
+  color: #000000; /* Only for DETAIL1, otherwise default black */
+  line-height: 2;
+}
+
+.DETAIL1 {
+  font-size: 2.5rem; /* Larger heading */
+  color: #fd896d; /* Specific color for main detail */
+}
+
+.DETAIL5 {
+  font-size: 2.5rem; /* Larger heading */
+  color: #fd896d; /* Specific color for main detail */
+}
+/* Map section styles with adaptive sizing */
+.map-section {
+  border-radius: 25px;
+  width: 90%; /* Responsive width */
+  margin: 5% auto; /* Centering the section */
+  transition: all 0.3s ease-in-out; /* Smoother transition */
+}
+
+/* Styles for the google map with hover effects */
+.google-map {
+  position: relative;
+  width: 100%; /* Full width of the container */
+  height: 400px; /* Fixed height but can be adjusted if needed */
+  border-radius: 8px;
+  overflow: hidden; /* Ensures no overflow from pseudo-elements */
+  perspective: 1000px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+}
+
+.google-map:hover {
+  transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  /* Styles for smartphones */
+  .DETAIL2,
+  .DETAIL3,
+  .HOTLINE2 {
+    font-size: 1rem; /* Smaller font size for smaller devices */
+  }
+  .google-map {
+    height: 300px; /* Smaller map for smaller devices */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* Styles for tablets */
+}
+
+@media (min-width: 1025px) {
+  /* Styles for laptops/desktops */
+}
+/* Social Links Colors */
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply to body and html to ensure full coverage */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-container {
+  margin: auto; /* Center the container */
+  padding: 0 15px; /* Add padding */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Wrap elements for responsiveness */
+  justify-content: center; /* Center items horizontally */
+}
+
+.footer {
+  background-color: #ffc9c9;
+  padding: 0px 0px; /* increase padding for more space */
+  text-align: center; /* center the content */
+  margin-top: 300px; /* ensure there's space between the main content and the footer */
+
+  font-family: "Sunflower", sans-serif;
+}
+.logo img {
+  display: block; /* Make sure the image is a block element to allow margin auto to work */
+  height: 400px; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure image is responsive and doesn't exceed its container */
+  mix-blend-mode: multiply;
+}
+
+.footer-col {
+  flex: 1; /* Give columns the ability to grow */
+  min-width: 250px; /* Minimum width before wrapping */
+  margin: 25px; /* Add some margin between columns */
+  margin-top: 100px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #000;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+.social-links {
+  display: flex; /* Establishes a flex container */
+  align-items: center; /* Centers items vertically */
+  justify-content: start; /* Aligns items to the start of the container */
+  flex-wrap: nowrap; /* Prevents wrapping to ensure items stay in one line */
+}
+
+.social-links a {
+  display: inline-flex; /* Makes each link a flex container too */
+  align-items: center; /* Centers the icon and text vertically inside the link */
+  justify-content: center; /* Centers content horizontally inside the link */
+  text-decoration: none; /* Removes underline from links */
+  width: 80px;
+  height: 60px;
+  padding: 10px 20px;
+
+  margin: 10px 2px 30px; /* Top, right/left, bottom margins */
+  color: white;
+  background-color: #f09c9c; /* Base color, overridden for specific links */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px; /* Consistent font size */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition for multiple properties */
+}
+
+/* Specific Social Colors and overrides */
+.social-links a.facebook {
+  background-color: #3b5998;
+}
+.social-links a.instagram {
+  background-color: #e1306c;
+}
+.social-links a.tiktok {
+  background-color: #000000;
+}
+.social-links a.youtube {
+  background-color: #ff0000;
+}
+.social-links a.shopee {
+  background-color: #f57224;
+}
+.social-links a.lazada {
+  background-color: #ff5722;
+}
+/* Hover effects */
+.social-links a:hover {
+  background-color: #fff; /* Changes the background to white on hover */
+  color: #333; /* Changes text/icon color to dark grey for visibility */
+  transform: scale(1.1); /* Slightly enlarges the link */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for depth */
+}
+
+.footer-col ul li {
+  list-style-type: none; /* Removes bullet points */
+  line-height: 1.5; /* Adds more spacing between lines */
+  margin-bottom: 10px; /* Adds space between list items */
+}

@@ -1,0 +1,446 @@
+.product-container1 {
+  width: 90%;
+  margin-left: -30px;
+
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(210px, 1fr)
+  ); /* Adjust '200px' to the minimum width you want for your product items */
+  grid-gap: 60px; /* This sets the gap between items */
+  justify-content: space-around;
+}
+
+.highlighted {
+  order: -1; /* This will move the item to the start of the flex container */
+  border: 2px solid #ffadad; /* For example, a pink border to highlight the card */
+}
+
+/* Main container for both elements */
+.products-wrapper2 {
+  display: flex;
+  align-items: center; /* Align vertically */
+  justify-content: center; /* Center items horizontally */
+  flex-direction: column; /* Stack them vertically */
+}
+
+/* Rose bouquet title */
+.Miscellenious {
+  font-size: 31px;
+  color: rgb(240, 143, 143);
+  text-align: center; /* Center the text horizontally */
+  margin: 20px 0; /* Add vertical spacing */
+  font-family: "Sunflower", sans-serif;
+}
+
+/* Poem container */
+.poem-container3 {
+  text-align: center; /* Center the text horizontally */
+  font-size: 25px;
+  color: #322d6e;
+  margin: 20px 0; /* Add vertical spacing */
+  font-family: "Andika", sans-serif;
+  line-height: 1;
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  .products-wrapper2 {
+    flex-direction: row; /* Set items side by side */
+    justify-content: space-around; /* Distribute space around items */
+    max-width: 80%; /* Limit the width of the wrapper */
+    margin: 450px auto; /* Center the wrapper and add vertical margin */
+  }
+
+  .Miscellenious,
+  .poem-container3 {
+    width: 50%; /* Assign width to both elements */
+    margin: 0; /* Remove margin */
+  }
+
+  /* If you need more control over the exact positioning, you can use margins or padding here */
+}
+
+/* Mobile styles */
+@media (max-width: 1023px) {
+  .products-wrapper2 {
+    padding: 10px; /* Add padding for smaller screens */
+  }
+
+  .Miscellenious,
+  .poem-container3 {
+    width: 100%; /* Allow each item to take full width */
+  }
+}
+.bold-hr3 {
+  max-width: 100%;
+  border: none; /* Remove default border */
+  height: 30px; /* Adjust the thickness of the hr */
+  background-color: #ffadad; /* Set the color of the hr */
+  margin-bottom: 1000px 1000px; /* Optional: add some margin above and below the hr */
+  width: 100%; /* Ensure hr spans full width */
+  margin: 0;
+}
+.search-bar2 {
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 315px; /* Default width for desktop */
+  height: 50px;
+  background-color: #f1f1f1;
+  border: 2px solid #d1d1d1;
+  border-radius: 25px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.search-bar2 input {
+  border: none;
+  outline: none;
+  background: none;
+  width: 100%;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.select-menu4 {
+  margin-top: 50px;
+  margin-left: 30px;
+  width: 135px;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+.select {
+  background-color: #201e1e;
+  padding: 20px;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.options-list1 {
+  position: absolute;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  margin-top: 14px;
+  padding: 0 20px;
+  max-height: 180px;
+  overflow-y: auto;
+  transition: 0.4s linear 0.2s;
+  height: 0;
+}
+
+.option2 {
+  padding: 8px 0;
+  font-weight: 500;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+.option2:hover,
+.option2.selected {
+  color: #00a8ff;
+}
+
+.options-list1::-webkit-scrollbar {
+  width: 4px;
+  background-color: #eee;
+}
+
+.options-list1::-webkit-scrollbar-thumb {
+  background-color: #00a8ff;
+}
+
+.options-list1.active {
+  height: 180px;
+}
+
+.select-menu5 {
+  margin-top: -58px;
+  margin-left: 215px;
+  width: 150px;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+.select {
+  background-color: #201e1e;
+  padding: 20px;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.options-list1 {
+  position: absolute;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  margin-top: 14px;
+  padding: 0 20px;
+  max-height: 180px;
+  overflow-y: auto;
+  transition: 0.4s linear 0.2s;
+  height: 0;
+}
+
+.option2 {
+  padding: 8px 0;
+  font-weight: 500;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+.option2:hover,
+.option2.selected {
+  color: #00a8ff;
+}
+
+.options-list1::-webkit-scrollbar {
+  width: 4px;
+  background-color: #eee;
+}
+
+.options-list1::-webkit-scrollbar-thumb {
+  background-color: #00a8ff;
+}
+
+.options-list1.active {
+  height: 180px;
+}
+
+.card {
+  cursor: pointer;
+  width: 260px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 100px;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  transform: scale(1.1);
+}
+.card img {
+  object-fit: fill;
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: start;
+}
+.card-body .name h5 {
+  font-family: "Andika", sans-serif;
+  font-weight: 0;
+}
+.checked {
+  color: orange;
+  padding-left: 70px;
+}
+.description {
+  display: flex;
+}
+
+.product-name {
+  font-size: 16px;
+  color: #333;
+}
+.product-description {
+  color: #666;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.product-price {
+  font-size: 16px;
+  color: #888;
+  margin-top: 8px;
+}
+/* Social Links Colors */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply to body and html to ensure full coverage */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-container {
+  max-width: 1700px;
+
+  margin: auto; /* Center the container */
+  padding: 0 15px; /* Add padding */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Wrap elements for responsiveness */
+  justify-content: center; /* Center items horizontally */
+}
+
+.footer {
+  background-color: #ffc9c9;
+  padding: 0px 0px; /* increase padding for more space */
+  text-align: center; /* center the content */
+  margin-top: 300px; /* ensure there's space between the main content and the footer */
+
+  font-family: "Sunflower", sans-serif;
+}
+.logo img {
+  display: block; /* Make sure the image is a block element to allow margin auto to work */
+  height: 400px; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure image is responsive and doesn't exceed its container */
+  mix-blend-mode: multiply;
+}
+
+.footer-col {
+  flex: 1; /* Give columns the ability to grow */
+  min-width: 250px; /* Minimum width before wrapping */
+  margin: 25px; /* Add some margin between columns */
+  margin-top: 100px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #000;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+.social-links {
+  display: flex; /* Establishes a flex container */
+  align-items: center; /* Centers items vertically */
+  justify-content: start; /* Aligns items to the start of the container */
+  flex-wrap: nowrap; /* Prevents wrapping to ensure items stay in one line */
+}
+
+.social-links a {
+  display: inline-flex; /* Makes each link a flex container too */
+  align-items: center; /* Centers the icon and text vertically inside the link */
+  justify-content: center; /* Centers content horizontally inside the link */
+  text-decoration: none; /* Removes underline from links */
+  width: 80px;
+  height: 60px;
+  padding: 10px 20px;
+
+  margin: 10px 2px 30px; /* Top, right/left, bottom margins */
+  color: white;
+  background-color: #f09c9c; /* Base color, overridden for specific links */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px; /* Consistent font size */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition for multiple properties */
+}
+
+/* Specific Social Colors and overrides */
+.social-links a.facebook {
+  background-color: #3b5998;
+}
+.social-links a.instagram {
+  background-color: #e1306c;
+}
+.social-links a.tiktok {
+  background-color: #000000;
+}
+.social-links a.youtube {
+  background-color: #ff0000;
+}
+.social-links a.shopee {
+  background-color: #f57224;
+}
+.social-links a.lazada {
+  background-color: #ff5722;
+}
+/* Hover effects */
+.social-links a:hover {
+  background-color: #fff; /* Changes the background to white on hover */
+  color: #333; /* Changes text/icon color to dark grey for visibility */
+  transform: scale(1.1); /* Slightly enlarges the link */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for depth */
+}
+
+.footer-col ul li {
+  list-style-type: none; /* Removes bullet points */
+  line-height: 1.5; /* Adds more spacing between lines */
+  margin-bottom: 10px; /* Adds space between list items */
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 470px) {
+  .navbar-links-left {
+    display: none;
+  }
+  .navbar-links-right {
+    display: none;
+  }
+  .navbar-logo {
+    margin-right: 60%;
+
+    width: 100%;
+  }
+  .search {
+    display: none;
+  }
+  .nav-items a {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .navbar-links-left {
+    display: none;
+  }
+  .navbar-links-right {
+    display: none;
+  }
+  .navbar-logo {
+    position: static;
+    transform: translateX(130%);
+  }
+  .search {
+    display: none;
+  }
+  .nav-items a {
+    display: none;
+  }
+}
